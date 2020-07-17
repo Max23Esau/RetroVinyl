@@ -21,9 +21,9 @@ body {
   &-logo {
     margin-left: 50px;
   }
-  &-logo img {
-    width: 150px;
-    height: 80px;
+  &-logo a {
+    color: $color-claro;
+    text-decoration: none;
   }
   &-menu ul {
     margin: 0;
