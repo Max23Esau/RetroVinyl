@@ -1,52 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap");
-body {
-  margin: 0;
-  padding: 0;
-  color: white;
-  font-family: "Oswald", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap");
+.card {
+  -webkit-box-shadow: 0 0 10px 2px #121212;
+          box-shadow: 0 0 10px 2px #121212;
+  color: #121212;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  height: 480px;
+  width: 300px;
 }
 
-.header {
+.card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.card img {
   width: 100%;
-  height: 100px;
-  background: #1b1b1b;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 100%;
 }
 
-.header-logo {
-  margin-left: 50px;
+.card-title, .card-artist, .card-price {
+  margin: 10px;
+  font-size: 1.3em;
 }
 
-.header-logo img {
-  width: 150px;
-  height: 80px;
-}
-
-.header-menu ul {
-  margin: 0;
+.card-button {
+  border: none;
+  background: #ae1f18;
+  color: white;
+  font-size: 1.5em;
+  outline: none;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 50px;
 }
 
-.header-menu li {
-  margin: 0 40px;
-  list-style: none;
+.card-button:hover {
+  background: #121212;
+  color: white;
+  text-shadow: 0 0 10px white;
 }
 
-.header-menu li a {
+.card-button a {
   text-decoration: none;
   color: white;
+  padding: 10px 100px;
+}
+
+.card-details {
+  height: 180px;
+}
+
+.card-button {
+  height: 70px;
 }
 
 .hero {
@@ -103,7 +121,63 @@ body {
   max-height: 300px;
 }
 
-.main .card {
+.detalles {
+  color: #121212;
+}
+
+.information {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 500px 400px 1fr;
+      grid-template-columns: 500px 400px 1fr;
+  text-align: center;
+  margin: 50px;
+}
+
+.information-left img {
+  width: 500px;
+  height: 500px;
+}
+
+.information-right {
+  text-align: left;
+  margin: auto 50px;
+  width: 300px;
+  font-size: 1.5em;
+}
+
+.information-right .btn {
+  border: none;
+  background: #ae1f18;
+  color: white;
+  font-size: 1.5em;
+  outline: none;
+  padding: 0;
+  border-radius: 20px;
+  width: 300px;
+}
+
+.information-right .btn:hover {
+  background: #121212;
+  color: white;
+  text-shadow: 0 0 10px white;
+}
+
+.information-right .btn a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 100px;
+}
+
+.information-right .btn a {
+  padding: 0px 60px;
+}
+
+.recomendaciones {
+  margin: 0 auto;
+}
+
+.recomendaciones .card {
   -webkit-box-shadow: 0 0 10px 2px #121212;
           box-shadow: 0 0 10px 2px #121212;
   color: #121212;
@@ -117,43 +191,104 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: left;
-  height: 480px;
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
 }
 
-.main .card:hover {
+.recomendaciones .card:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
 }
 
-.main .card-details {
-  height: 180px;
+.recomendaciones .card img {
+  width: 100%;
+  height: 100%;
 }
 
-.main .card-title, .main .card-artist, .main .card-price {
+.recomendaciones .card-title, .recomendaciones .card-artist, .recomendaciones .card-price {
   margin: 10px;
   font-size: 1.3em;
 }
 
-.main .card-button {
+.recomendaciones .card-button {
   border: none;
   background: #ae1f18;
   color: white;
-  height: 70px;
   font-size: 1.5em;
   outline: none;
   padding: 0;
 }
 
-.main .card-button:hover {
+.recomendaciones .card-button:hover {
   background: #121212;
   color: white;
   text-shadow: 0 0 10px white;
 }
 
-.main .card-button a {
+.recomendaciones .card-button a {
   text-decoration: none;
   color: white;
   padding: 10px 100px;
+}
+
+.recomendaciones .card-details {
+  display: none;
+}
+
+.recomendaciones .card button {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background: #1b1b1b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5em;
+}
+
+.header-logo {
+  margin-left: 50px;
+}
+
+.header-logo img {
+  width: 150px;
+  height: 80px;
+}
+
+.header-menu ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 50px;
+}
+
+.header-menu li {
+  margin: 0 40px;
+  list-style: none;
+}
+
+.header-menu li a {
+  text-decoration: none;
+  color: white;
 }
 
 .footer {
@@ -169,5 +304,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 1.5em;
 }
 /*# sourceMappingURL=main.css.map */

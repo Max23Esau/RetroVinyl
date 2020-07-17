@@ -1,0 +1,14 @@
+@import "../vars.scss";
+@import "../mixins.scss";
+
+.card {
+  @include card;
+  height: 480px;
+  width: 300px;
+  &-details {
+    height: 180px;
+  }
+  &-button {
+    height: 70px;
+  }
+}

@@ -1,0 +1,49 @@
+@import "../vars.scss";
+@import "../mixins.scss";
+
+.detalles {
+  color: $color-oscuro;
+}
+
+.information {
+  display: grid;
+  grid-template-columns: 500px 400px 1fr;
+  text-align: center;
+  margin: 50px;
+}
+
+.information-left img {
+  width: 500px;
+  height: 500px;
+}
+
+.information-right {
+  text-align: left;
+  margin: auto 50px;
+  width: 300px;
+  font-size: 1.5em;
+  & .btn {
+    @include btn;
+    border-radius: 20px;
+    width: 300px;
+    & a {
+      padding: 0px 60px;
+    }
+  }
+}
+
+.recomendaciones {
+  margin: 0 auto;
+  .card {
+    @include card;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    &-details {
+      display: none;
+    }
+    & button {
+      display: none;
+    }
+  }
+}
