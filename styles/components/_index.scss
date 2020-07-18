@@ -40,29 +40,4 @@
     max-width: 300px;
     max-height: 300px;
   }
-  // .card {
-  //   box-shadow: 0 0 10px 2px $color-oscuro;
-  //   color: $color-oscuro;
-  //   transition: 0.3s;
-  //   display: flex;
-  //   flex-direction: column;
-  //   text-align: left;
-  //   height: 480px;
-  //   &:hover {
-  //     transform: translateY(-5px);
-  //   }
-  //   &-details {
-  //     height: 180px;
-  //   }
-  //   &-title,
-  //   &-artist,
-  //   &-price {
-  //     margin: 10px;
-  //     font-size: 1.3em;
-  //   }
-  //   &-button {
-  //     @include btn;
-  //     height: 70px;
-  //   }
-  // }
 }

@@ -1,0 +1,45 @@
+@import "../vars.scss";
+@import "../mixins.scss";
+
+.compra {
+  margin: 100px auto;
+  box-shadow: 0 0 10px 2px $color-oscuro;
+  width: 900px;
+  height: 340px;
+}
+
+.carrito {
+  // width: 900px;
+  margin: 0 auto;
+  background: $color-claro;
+  color: $color-oscuro;
+  text-align: center;
+  &-title {
+    font-size: 1.8em;
+    background: $color-oscuro;
+    height: 80px;
+    color: $color-claro;
+    & h2 {
+      margin: 10px;
+    }
+  }
+  button {
+    @include btn;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+
+.detalles-carrito {
+  display: grid;
+  grid-template-columns: repeat(4, 220px);
+  place-content: center;
+  text-align: center;
+  // font-size: 1.2em;
+  & hr {
+    border: 1px solid $color-oscuro;
+  }
+  & .imagen img {
+    width: 100px;
+  }
+}
