@@ -7,6 +7,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap");
 .card {
   -webkit-box-shadow: 0 0 10px 2px #121212;
           box-shadow: 0 0 10px 2px #121212;
@@ -43,7 +45,7 @@
 .card-button {
   border: none;
   background: #ae1f18;
-  color: white;
+  color: #fff;
   font-size: 1.5em;
   outline: none;
   padding: 0;
@@ -51,13 +53,13 @@
 
 .card-button:hover {
   background: #121212;
-  color: white;
-  text-shadow: 0 0 10px white;
+  color: #fff;
+  text-shadow: 0 0 10px #fff;
 }
 
 .card-button a {
   text-decoration: none;
-  color: white;
+  color: #fff;
   padding: 10px 100px;
 }
 
@@ -152,7 +154,7 @@
 .information-right .btn {
   border: none;
   background: #ae1f18;
-  color: white;
+  color: #fff;
   font-size: 1.5em;
   outline: none;
   padding: 0;
@@ -162,13 +164,13 @@
 
 .information-right .btn:hover {
   background: #121212;
-  color: white;
-  text-shadow: 0 0 10px white;
+  color: #fff;
+  text-shadow: 0 0 10px #fff;
 }
 
 .information-right .btn a {
   text-decoration: none;
-  color: white;
+  color: #fff;
   padding: 10px 100px;
 }
 
@@ -217,7 +219,7 @@
 .recomendaciones .card-button {
   border: none;
   background: #ae1f18;
-  color: white;
+  color: #fff;
   font-size: 1.5em;
   outline: none;
   padding: 0;
@@ -225,13 +227,13 @@
 
 .recomendaciones .card-button:hover {
   background: #121212;
-  color: white;
-  text-shadow: 0 0 10px white;
+  color: #fff;
+  text-shadow: 0 0 10px #fff;
 }
 
 .recomendaciones .card-button a {
   text-decoration: none;
-  color: white;
+  color: #fff;
   padding: 10px 100px;
 }
 
@@ -253,7 +255,7 @@
 
 .carrito {
   margin: 0 auto;
-  background: white;
+  background: #fff;
   color: #121212;
   text-align: center;
 }
@@ -262,7 +264,7 @@
   font-size: 1.8em;
   background: #121212;
   height: 80px;
-  color: white;
+  color: #fff;
 }
 
 .carrito-title h2 {
@@ -272,7 +274,7 @@
 .carrito button {
   border: none;
   background: #ae1f18;
-  color: white;
+  color: #fff;
   font-size: 1.5em;
   outline: none;
   padding: 0;
@@ -282,13 +284,13 @@
 
 .carrito button:hover {
   background: #121212;
-  color: white;
-  text-shadow: 0 0 10px white;
+  color: #fff;
+  text-shadow: 0 0 10px #fff;
 }
 
 .carrito button a {
   text-decoration: none;
-  color: white;
+  color: #fff;
   padding: 10px 100px;
 }
 
@@ -309,10 +311,72 @@
   width: 100px;
 }
 
+.card {
+  -webkit-box-shadow: 0 0 10px 2px #121212;
+          box-shadow: 0 0 10px 2px #121212;
+  color: #121212;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  height: 480px;
+  width: 300px;
+}
+
+.card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-title, .card-artist, .card-price {
+  margin: 10px;
+  font-size: 1.3em;
+}
+
+.card-button {
+  border: none;
+  background: #ae1f18;
+  color: #fff;
+  font-size: 1.5em;
+  outline: none;
+  padding: 0;
+}
+
+.card-button:hover {
+  background: #121212;
+  color: #fff;
+  text-shadow: 0 0 10px #fff;
+}
+
+.card-button a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 100px;
+}
+
+.card-details {
+  height: 180px;
+}
+
+.card-button {
+  height: 70px;
+}
+
 body {
   margin: 0;
   padding: 0;
-  color: white;
+  color: #121212;
   font-family: "Oswald", sans-serif;
 }
 
@@ -320,6 +384,7 @@ body {
   width: 100%;
   height: 100px;
   background: #1b1b1b;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -337,7 +402,7 @@ body {
 }
 
 .header-logo a {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -357,13 +422,14 @@ body {
 
 .header-menu li a {
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 
 .footer {
   width: 100%;
   height: 100px;
   background: #1b1b1b;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
