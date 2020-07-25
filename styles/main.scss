@@ -8,7 +8,7 @@
 body {
   margin: 0;
   padding: 0;
-  color: $color-claro;
+  color: $color-oscuro;
   font-family: $font-family;
 }
 
@@ -16,6 +16,7 @@ body {
   width: 100%;
   height: 100px;
   background: $background;
+  color: $color-claro;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,6 +48,7 @@ body {
   width: 100%;
   height: 100px;
   background: $background;
+  color: $color-claro;
   display: flex;
   justify-content: space-between;
   align-items: center;
